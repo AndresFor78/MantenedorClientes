@@ -1,0 +1,94 @@
+ body {
+     font-family: "Segoe UI", sans-serif;
+     background: #f5f6fa;
+     margin: 0;
+     padding: 40px;
+     color: #333;
+ }
+
+ h1 {
+     text-align: center;
+     margin-bottom: 25px;
+ }
+
+ .container {
+     max-width: 900px;
+     margin: auto;
+     background: #fff;
+     padding: 25px;
+     border-radius: 10px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+ }
+
+ form {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 15px;
+     margin-bottom: 30px;
+ }
+
+ form input {
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     font-size: 15px;
+ }
+
+ form button {
+     grid-column: span 2;
+     padding: 12px;
+     background: #0066ff;
+     border: none;
+     color: white;
+     font-size: 17px;
+     border-radius: 6px;
+     cursor: pointer;
+ }
+
+ form button:hover {
+     background: #0053cc;
+ }
+
+ table {
+     width: 100%;
+     border-collapse: collapse;
+     margin-top: 15px;
+ }
+
+ table th {
+     background: #0066ff;
+     color: white;
+     padding: 12px;
+     text-align: left;
+ }
+
+ table td {
+     padding: 12px;
+     border-bottom: 1px solid #ddd;
+ }
+
+ .btn {
+     padding: 6px 12px;
+     border-radius: 5px;
+     border: none;
+     cursor: pointer;
+     color: white;
+ }
+
+ .editar {
+     background: #ffa502;
+ }
+
+ .eliminar {
+     background: #e84118;
+ }
+
+ .editar:hover {
+     background: #cc8402;
+ }
+
+ .eliminar:hover {
+     background: #c23616;
+ }
+
+ 

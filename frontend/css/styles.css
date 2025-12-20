@@ -1,0 +1,172 @@
+/* =========================
+   RESET GLOBAL
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   GENERAL
+========================= */
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f5f6fa;
+    padding: 40px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* =========================
+   CONTENEDOR
+========================= */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form button {
+    grid-column: span 2;
+    padding: 12px;
+    background: #0066ff;
+    border: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0053cc;
+}
+
+/* =========================
+   TABLA
+========================= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    /* 🔥 OBLIGATORIO */
+}
+
+table th,
+table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+table th {
+    background: #0066ff;
+    color: white;
+    text-align: left;
+}
+
+/* =========================
+   COLUMNA ACCIONES
+========================= */
+.th-acciones,
+.acciones {
+    width: 140px;
+    min-width: 140px;
+    max-width: 140px;
+    text-align: center;
+}
+
+.acciones {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* =========================
+   BOTONES
+========================= */
+.btn {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.editar {
+    background: #ffa502;
+}
+
+.eliminar {
+    background: #e84118;
+}
+
+.editar:hover {
+    background: #cc8402;
+}
+
+.eliminar:hover {
+    background: #c23616;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        min-width: 700px;
+    }
+}
+
+@media (max-width: 600px) {
+    form {
+        grid-template-columns: 1fr;
+    }
+
+    form button {
+        grid-column: span 1;
+    }
+}

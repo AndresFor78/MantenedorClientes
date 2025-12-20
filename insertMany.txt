@@ -1,0 +1,32 @@
+db.cliente.insertMany([
+  {
+    nombre: "Juan Pérez",
+    email: "juan.perez@email.com",
+    telefono: "987654321",
+    ciudad: "Santiago"
+  },
+  {
+    nombre: "María González",
+    email: "maria.gonzalez@email.com",
+    telefono: "912345678",
+    ciudad: "Valparaíso"
+  },
+  {
+    nombre: "Carlos Ramírez",
+    email: "carlos.ramirez@email.com",
+    telefono: "998877665",
+    ciudad: "Concepción"
+  },
+  {
+    nombre: "Ana Torres",
+    email: "ana.torres@email.com",
+    telefono: "934567890",
+    ciudad: "La Serena"
+  },
+  {
+    nombre: "Pedro Fuentes",
+    email: "pedro.fuentes@email.com",
+    telefono: "956789012",
+    ciudad: "Antofagasta"
+  }
+]);

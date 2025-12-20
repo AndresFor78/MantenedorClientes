@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MongoDB</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+<h1>Gestión de Clientes</h1>
+
+<div class="container">
+
+    <!-- FORMULARIO -->
+    <form id="formCliente">
+        <input type="text" id="nombre" placeholder="Nombre completo" required>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <input type="text" id="telefono" placeholder="Teléfono" required>
+        <input type="text" id="ciudad" placeholder="Ciudad" required>
+
+        <button id="btnGuardar" type="submit">
+            Guardar Cliente
+        </button>
+    </form>
+
+    <!-- TABLA -->
+    <div class="table-wrapper">
+      <table>
+          <thead>
+              <tr>
+                  <th>Nombre</th>
+                  <th>Email</th>
+                  <th>Teléfono</th>
+                  <th>Ciudad</th>
+                  <th class="th-acciones">Acciones</th>
+              </tr>
+          </thead>
+          <tbody id="tablaClientes">
+              <!-- Filas generadas por JS -->
+          </tbody>
+      </table>
+    </div>
+
+</div>
+
+</body>
+</html>
