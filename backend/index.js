@@ -62,7 +62,6 @@ conectarDb();
 
 //Levantar server
 api.listen(port, ()=>{
-    console.log('servidor corriendo...');
-    
+    console.log('servidor corriendo...');    
 })
 
