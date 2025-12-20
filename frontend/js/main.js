@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000/api/clientes';
+const API_BASE = 'https://mantenedorclientes.onrender.com/api/clientes';
 
 //Variable que indica tipo de acción
 let clienteEditandoId = null;
