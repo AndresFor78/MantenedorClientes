@@ -22,6 +22,7 @@ api.use(express.static(path.join(__dirname, '../frontend')));
 
 //Conexión Atlas
 const { MongoClient} = require('mongodb');
+const { log } = require('console');
 
 //Conexión Mongodb Atlas
 const uri = process.env.MONGODB_URI;
@@ -38,6 +39,9 @@ async function conectarDb() {
         
         // 1. Conectar a MongoDB
         await client.connect();
+
+        console.log('conectado a atlas');
+        
 
         // 2. Seleccionar base de datos
         db = client.db('clientes');

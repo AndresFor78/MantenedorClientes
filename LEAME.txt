@@ -1,0 +1,5 @@
+
+Proyecto JS Vanilla + Node.js + Express + MongoAtlas + deploy en Render
+
+1. Web service debe estar corriendo en Render. Este servicio está conectado al repo de GitHub
+2. MongoAtlas debe estar corriendo
